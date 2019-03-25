@@ -256,6 +256,7 @@ public class DeckPage extends JFrame {
 				} catch (Exception e) {					
 					deckManager.insertDeck(deck);
 				}
+				JOptionPane.showMessageDialog(null, "El mazo se ha guardado correctamente");
 				loadCards();
 				cleanDeck();
 			}
@@ -274,7 +275,7 @@ public class DeckPage extends JFrame {
 				}
 				valueText.setText(String.valueOf(deck.getDeckValue()));
 			}
-		} catch (Exception e) {JOptionPane.showMessageDialog(null, "No existe una baraja con ese nombre");}
+		} catch (Exception e) {JOptionPane.showMessageDialog(null, "No existe un mazo con ese nombre");}
 	}
 	
 	private void cleanDeck() {
