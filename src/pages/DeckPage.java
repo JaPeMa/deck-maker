@@ -280,5 +280,6 @@ public class DeckPage extends JFrame {
 	private void cleanDeck() {
 		deck = new Deck();
 		valueText.setText("0");
+		textField.setText("");
 	}
 }
